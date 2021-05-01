@@ -1,1 +1,57 @@
-// TODO
+.mainContainer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .postsContainer {
+    width: 700px;
+    margin: auto;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .post {
+      margin-bottom: 50px;
+
+      .postTitle {
+        font-weight: 700;
+        font-size: 28px;
+      }
+      .postSubtitle {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--gray-600);
+      }
+      .moreInfo {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        div {
+          display: flex;
+          flex-direction: row;
+
+          p {
+            margin-left: 11px;
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+        div + div {
+          margin-left: 30px;
+        }
+      }
+    }
+
+    button {
+      color: var(--pink);
+      background: var(--black-900);
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+    }
+  }
+}
